@@ -1,0 +1,163 @@
+#navbar-changes {
+  background: linear-gradient(to right, #591c0b, rgb(77, 24, 60));
+  color: black;
+}
+
+.container1 {
+  text-align: center;
+  position: relative;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.container1 span {
+  text-transform: uppercase;
+  display: block;
+}
+.text1 {
+  padding: 20px 0px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  background: black;
+  position: relative;
+  animation: text 2s 1;
+}
+.text2 {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Comfortaa", cursive;
+  color: #294250;
+}
+
+@keyframes text {
+  0% {
+    color: black;
+    margin-bottom: -40px;
+  }
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+    position: sticky;
+  }
+}
+
+#backgroundimg {
+  height: 470px;
+  background: linear-gradient(#85dcb8, #01693e);
+}
+
+#android-image {
+  height: 200px;
+  transform: translateY(8px);
+  position: relative;
+  display: block;
+  margin: auto;
+  animation: android-image 2s 1;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes android-image {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#members {
+  height: 400px;
+  background-color: rgba(224, 208, 224, 0.938);
+}
+
+.flex-c {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+.contacts {
+  background-color: teal;
+  border-radius: 15px;
+  min-width: 300px;
+  margin: 30px;
+}
+
+@media (max-width: 640px) {
+  .flex-c {
+    flex-flow: column wrap;
+    height: 40px;
+    align-items: center;
+  }
+}
+
+.photo {
+  background-color: whitesmoke;
+}
+
+.centered {
+  background: linear-gradient(to bottom, #64dbd5, #2a6966);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.178);
+  background-color: #1f2833;
+  margin: 20px;
+  width: 40%;
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  border-radius: 30px;
+}
+
+.card-image {
+  height: 80px;
+}
+
+.user-name {
+  color: azure;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+@media (max-width: 450px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card {
+    margin: 10px;
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .card-image {
+    height: 40px;
+  }
+}
